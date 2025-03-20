@@ -136,7 +136,7 @@ Note: The dataset files are not included in this repository due to their large s
 ### Features
 
 | Category                     | Feature Name                | Description                                  |
-| ---------------------------- | --------------------------- | -------------------------------------------- | ----------------------------------- | -------------------------------- | -------------------------------- | --------------------------- | ------------------------- | ----------------------------- | --------------------------------- | ------------------------------- |
+| ---------------------------- | --------------------------- | -------------------------------------------- |
 | **Flow Metrics**             | Flow Duration               | Total duration of the flow                   |
 |                              | Total Fwd Packets           | Number of packets in forward direction       |
 |                              | Total Backward Packets      | Number of packets in backward direction      |
@@ -180,39 +180,40 @@ Note: The dataset files are not included in this repository due to their large s
 |                              | ECE Flag Count              | Number of ECE flags                          |
 | **Header Information**       | Fwd Header Length           | Length of forward packet header              |
 |                              | Bwd Header Length           | Length of backward packet header             |
-|                              | **Packet Statistics**       | Fwd Packets/s                                | Forward packets per second          |
-|                              |                             | Bwd Packets/s                                | Backward packets per second         |
-|                              |                             | Min Packet Length                            | Minimum length of packet            |
-|                              |                             | Max Packet Length                            | Maximum length of packet            |
-|                              |                             | Packet Length Mean                           | Mean packet length                  |
-|                              |                             | Packet Length Std                            | Standard deviation of packet length |
-|                              |                             | Packet Length Variance                       | Variance of packet length           |
-|                              |                             | **Ratios & Averages**                        | Down/Up Ratio                       | Download to upload ratio         |
-|                              |                             |                                              | Average Packet Size                 | Average size of packet           |
-|                              |                             |                                              | Avg Fwd Segment Size                | Average size of forward segment  |
-|                              |                             |                                              | Avg Bwd Segment Size                | Average size of backward segment |
-|                              |                             |                                              | **Bulk Transfer**                   | Fwd Avg Bytes/Bulk               | Average bytes in forward bulk    |
-|                              |                             |                                              |                                     | Fwd Avg Packets/Bulk             | Average packets in forward bulk  |
-|                              |                             |                                              |                                     | Fwd Avg Bulk Rate                | Average forward bulk rate        |
-|                              |                             |                                              |                                     | Bwd Avg Bytes/Bulk               | Average bytes in backward bulk   |
-|                              |                             |                                              |                                     | Bwd Avg Packets/Bulk             | Average packets in backward bulk |
-|                              |                             |                                              |                                     | Bwd Avg Bulk Rate                | Average backward bulk rate       |
-|                              |                             |                                              |                                     | **Subflow Information**          | Subflow Fwd Packets              | Forward packets in subflow  |
-|                              |                             |                                              |                                     |                                  | Subflow Fwd Bytes                | Forward bytes in subflow    |
-|                              |                             |                                              |                                     |                                  | Subflow Bwd Packets              | Backward packets in subflow |
-|                              |                             |                                              |                                     |                                  |                                  | Subflow Bwd Bytes           | Backward bytes in subflow |
-|                              |                             |                                              |                                     |                                  |                                  | **Window Information**      | Init_Win_bytes_forward    | Initial window bytes forward  |
-|                              |                             |                                              |                                     |                                  |                                  |                             | Init_Win_bytes_backward   | Initial window bytes backward |
-|                              |                             |                                              |                                     |                                  |                                  |                             | act_data_pkt_fwd          | Actual data packets forward   |
-|                              |                             |                                              |                                     |                                  |                                  |                             | min_seg_size_forward      | Minimum segment size forward  |
-|                              |                             |                                              |                                     |                                  |                                  |                             | **Activity Time**         | Active Mean                   | Mean time flow was active         |
-|                              |                             |                                              |                                     |                                  |                                  |                             |                           | Active Std                    | Standard deviation of active time |
-|                              |                             |                                              |                                     |                                  |                                  |                             |                           | Active Max                    | Maximum time flow was active      |
-|                              |                             |                                              |                                     |                                  |                                  |                             |                           | Active Min                    | Minimum time flow was active      |
-|                              |                             |                                              |                                     |                                  |                                  |                             |                           | **Idle Time**                 | Idle Mean                         | Mean time flow was idle         |
-|                              |                             |                                              |                                     |                                  |                                  |                             |                           |                               | Idle Std                          | Standard deviation of idle time |
-|                              |                             |                                              |                                     |                                  |                                  |                             |                           |                               | Idle Max                          | Maximum time flow was idle      |
-|                              |                             |                                              |                                     |                                  |                                  |                             |                           |                               | Idle Min                          | Minimum time flow was idle      |
+| **Packet Statistics**        | Fwd Packets/s               | Forward packets per second                   |
+|                              | Bwd Packets/s               | Backward packets per second                  |
+|                              | Min Packet Length           | Minimum length of packet                     |
+|                              | Max Packet Length           | Maximum length of packet                     |
+|                              | Packet Length Mean          | Mean packet length                           |
+|                              | Packet Length Std           | Standard deviation of packet length          |
+|                              | Packet Length Variance      | Variance of packet length                    |
+| **Ratios & Averages**        | Down/Up Ratio               | Download to upload ratio                     |
+|                              | Average Packet Size         | Average size of packet                       |
+|                              | Avg Fwd Segment Size        | Average size of forward segment              |
+|                              | Avg Bwd Segment Size        | Average size of backward segment             |
+| **Bulk Transfer**            | Fwd Avg Bytes/Bulk          | Average bytes in forward bulk                |
+|                              | Fwd Avg Packets/Bulk        | Average packets in forward bulk              |
+|                              | Fwd Avg Bulk Rate           | Average forward bulk rate                    |
+|                              | Bwd Avg Bytes/Bulk          | Average bytes in backward bulk               |
+|                              | Bwd Avg Packets/Bulk        | Average packets in backward bulk             |
+|                              | Bwd Avg Bulk Rate           | Average backward bulk rate                   |
+| **Subflow Information**      | Subflow Fwd Packets         | Forward packets in subflow                   |
+|                              | Subflow Fwd Bytes           | Forward bytes in subflow                     |
+|                              | Subflow Bwd Packets         | Backward packets in subflow                  |
+|                              | Subflow Bwd Bytes           | Backward bytes in subflow                    |
+| **Window Information**       | Init_Win_bytes_forward      | Initial window bytes forward                 |
+|                              | Init_Win_bytes_backward     | Initial window bytes backward                |
+|                              | act_data_pkt_fwd            | Actual data packets forward                  |
+|                              | min_seg_size_forward        | Minimum segment size forward                 |
+| **Activity Time**            | Active Mean                 | Mean time flow was active                    |
+|                              | Active Std                  | Standard deviation of active time            |
+|                              | Active Max                  | Maximum time flow was active                 |
+|                              | Active Min                  | Minimum time flow was active                 |
+| **Idle Time**                | Idle Mean                   | Mean time flow was idle                      |
+|                              | Idle Std                    | Standard deviation of idle time              |
+|                              | Idle Max                    | Maximum time flow was idle                   |
+|                              | Idle Min                    | Minimum time flow was idle                   |
+
 
 ## Attack Types
 
